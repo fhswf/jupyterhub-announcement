@@ -108,6 +108,7 @@ class AnnouncementUpdateHandler(AnnouncementHandler):
 
     hub_users = []
     allow_admin = True
+    hub_groups = ["jupyterhub_admin"]
 
     @web.authenticated
     async def post(self):
